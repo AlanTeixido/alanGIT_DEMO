@@ -1,0 +1,145 @@
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git version
+git version 2.34.1
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git config --global user.name "alanteixido"
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git config --global user.email "alan.teixido.7e7@itb.cat"
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git config --list 
+user.name=alanteixido
+user.email=alan.teixido.7e7@itb.cat
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git init
+consell: S'està utilitzant «master» com a nom de la branca inicial. Aquest nom de branca
+consell: per defecte es pot canviar. Per a configurar el nom inicial de la branca que
+consell: s'utilitzarà en tots els repositoris nous, i que suprimirà aquest avís, useu:
+consell: 
+consell: 	git config --global init.defaultBranch <nom>
+consell: 
+consell: Els noms més usats habitualment en lloc de «master» són «main», «trunk» i
+consell: «development». La branca acabada de crear es pot canviar de nom amb l'ordre:
+consell: 
+consell: 	git branch -m <nom>
+S'ha inicialitzat un repositori buit del Git en /dades/alanteixido/AlanGIT/.git/
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca master
+
+No s'ha fet cap comissió encara
+
+no hi ha res a cometre (creeu/copieu fitxers i useu «git add» per a seguir-los)
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ ls -la
+total 12
+drwxr-xr-x 3 alan.teixido.7e7 828448783 4096 de des.  12 13:37 .
+drwxr-xrwx 9 alan.teixido.7e7 828448783 4096 de des.  12 13:02 ..
+drwxr-xr-x 7 alan.teixido.7e7 828448783 4096 de des.  12 13:37 .git
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca master
+
+No s'ha fet cap comissió encara
+
+no hi ha res a cometre (creeu/copieu fitxers i useu «git add» per a seguir-los)
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git add .
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca master
+
+No s'ha fet cap comissió encara
+
+no hi ha res a cometre (creeu/copieu fitxers i useu «git add» per a seguir-los)
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git add "Document sense nom 1" 
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca master
+
+No s'ha fet cap comissió encara
+
+Canvis a cometre:
+  (useu «git rm --cached <fitxer>...» per a fer «unstage»)
+	fitxer nou:       Document sense nom 1
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git commit . -m "chore: First Commit"
+[master (comissió arrel) 97747b6] chore: First Commit
+ 1 file changed, 67 insertions(+)
+ create mode 100644 Document sense nom 1
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git branch novaBranca
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git branch
+* master
+  novaBranca
+
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git checkout novaBranca 
+S'ha canviat a la branca «novaBranca»
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ ls
+'Document sense nom 1'
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git branch novaBranca2
+
+ALTRE DIA..............................................................
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git init
+S'ha reinicialitzat el repositori existent del Git en /dades/alanteixido/AlanGIT/.git/
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git branch -m main
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git log --oneline
+97747b6 (HEAD -> main, master) chore: First Commit
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ ls -lsa
+total 20
+4 drwxrwxr-- 4 alan.teixido.7e7 828448783 4096 de des.  13 11:29  .
+4 drwxr-xrwx 9 alan.teixido.7e7 828448783 4096 de des.  12 13:02  ..
+4 -rw-r--r-- 1 alan.teixido.7e7 828448783 3922 de des.  13 11:29 'Document sense nom 1'
+4 drwxr-xr-x 8 alan.teixido.7e7 828448783 4096 de des.  13 11:28  .git
+4 drwxr-xr-x 2 alan.teixido.7e7 828448783 4096 de des.  13 11:24  GITProva
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca main
+Canvis no «staged» per a cometre:
+  (useu «git add <fitxer>...» per a actualitzar què es cometrà)
+  (useu «git restore <file>...» per a descartar canvis en el directori de treball)
+	modificat:        Document sense nom 1
+
+no hi ha canvis afegits a cometre (useu «git add» o «git commit -a»)
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git commit . -m "feat: add code" 
+[main 5ba0d65] feat: add code
+ 1 file changed, 46 insertions(+)
+ 
+ alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git checkout master 
+error: Els canvis locals als fitxers següents se sobreescriurien per a agafar:
+	Document sense nom 1
+Cometeu els vostres canvis o feu «stash» abans de canviar de branca.
+S'està avortant
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca main
+Canvis no «staged» per a cometre:
+  (useu «git add <fitxer>...» per a actualitzar què es cometrà)
+  (useu «git restore <file>...» per a descartar canvis en el directori de treball)
+	modificat:        Document sense nom 1
+
+no hi ha canvis afegits a cometre (useu «git add» o «git commit -a»)
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git add.
+git: «add.» no és una ordre de git. Vegeu «git --help».
+
+L'ordre més similar és
+	add
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git add Document\ sense\ nom\ 1 
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git status
+En la branca main
+Canvis a cometre:
+  (useu «git restore --staged <fitxer>...» per a fer «unstage»)
+	modificat:        Document sense nom 1
+
+alan.teixido.7e7@CLT-012-HA307-13:~/Escriptori/DADES/alanteixido/AlanGIT$ git reset
+Canvis «unstaged» després del restabliment:
+M	Document sense nom 1
+
